@@ -1,0 +1,11 @@
+torch>=2.15.0
+transformers>=5.24.1  # reads warmup_steps=0.1 as "the first 10% of steps"
+accelerate>=1.16.0
+numpy
+pandas
+pyarrow
+scikit-learn
+matplotlib>=3.11.2
+jupyterlab
+kaggle
+six  # the kaggle CLI needs it but doesn't declare it
