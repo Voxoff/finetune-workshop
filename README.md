@@ -5,7 +5,7 @@ A workshop notebook for the Kaggle competition [Name That LLM](https://www.kaggl
 ## Run it
 
 You need:
-- a machine with an NVIDIA GPU and Python 3.12 or later;
+- a machine with an NVIDIA [GPU](https://learn.foundersandcoders.com/machines/)
 - a Kaggle account that has joined the competition, with an API key in `~/.kaggle/kaggle.json`.
 
 ```bash
