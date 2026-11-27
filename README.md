@@ -2,15 +2,6 @@
 
 A workshop notebook for the Kaggle competition [Name That LLM](https://www.kaggle.com/competitions/name-that-llm). Each passage is an answer to a prompt, written by one of 18 LLMs, and the task is to name the LLM. The notebook fine-tunes ModernBERT to do it, one idea at a time:
 
-1. what fine-tuning is
-2. train once, then test on prompts the model never saw
-3. why one test isn't enough: cross-validation
-4. learning rate × epochs
-5. memorising vs generalising
-6. more data
-
-Section 2 trains live on a GPU (about a minute). Sections 3–6 load runs that were trained beforehand, saved in `oof/`.
-
 ## Run it
 
 You need:
