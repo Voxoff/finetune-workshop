@@ -4,23 +4,11 @@ A workshop notebook for the Kaggle competition [Name That LLM](https://www.kaggl
 
 ## Run from the repository
 
-Clone the workshop to get the competition files in `data/` and the saved predictions in `oof/`.
+Clone the workshop on an NVIDIA GPU machine. The notebook reads the competition files from `data/` and the saved predictions from `oof/`. [Founders and Coders GPU machines](https://learn.foundersandcoders.com/machines/)
 
 ```bash
 git clone https://github.com/Voxoff/finetune-workshop.git
 cd finetune-workshop
-```
-
-On a laptop, open [the CPU workshop](finetune_workshop_cpu.ipynb). **Run All** tokenizes the passages and draws the plots from saved GPU runs. The first run downloads the 2 MB tokenizer.
-
-```bash
-python -m pip install jupyterlab numpy pandas pyarrow scikit-learn matplotlib tokenizers huggingface_hub
-jupyter lab finetune_workshop_cpu.ipynb
-```
-
-To fine-tune ModernBERT yourself, open the training notebook on an NVIDIA GPU machine. [Founders and Coders GPU machines](https://learn.foundersandcoders.com/machines/)
-
-```bash
 python -m pip install -r requirements.txt
 jupyter lab finetune_workshop.ipynb
 ```
@@ -37,3 +25,12 @@ python -m zipfile -e data/name-that-llm.zip data
 ```
 
 If you run the notebook on Kaggle, enable a GPU and add **Name That LLM** as a competition input. Set `DATA` to the mounted competition directory and `RESULTS` to the repo’s `oof/` directory.
+
+## Optional CPU workshop
+
+On a laptop, use the [CPU notebook](finetune_workshop_cpu.ipynb) to explore the data and plot saved training results.
+
+```bash
+python -m pip install jupyterlab numpy pandas pyarrow scikit-learn matplotlib tokenizers huggingface_hub
+jupyter lab finetune_workshop_cpu.ipynb
+```
