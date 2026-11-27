@@ -1,2 +1,5 @@
-data/
+/data/*
+!/data/train.csv
+!/data/test.csv
+!/data/sample_submission.parquet
 .ipynb_checkpoints/
